@@ -4,11 +4,11 @@ import scipy.stats as stats
 
 st.set_page_config(page_title="Luck Analyzer", page_icon="🎰")
 
-st.title("🎰 Gacha Luck Analyzer")
+st.title("🎰 Gamepull Luck Analyzer")
 st.write("Compare your drop rates against the mathematical average.")
 
 # Sidebar Navigation
-mode = st.sidebar.radio("Choose Mode:", ["Dry Streak Analysis", "Overall Luck (Z-Score)"])
+mode = st.sidebar.radio("Choose Mode:", ["Dry Streak Analysis", "Overall Luck"])
 
 if mode == "Dry Streak Analysis":
     st.header("How unlucky is your streak?")
@@ -21,9 +21,9 @@ if mode == "Dry Streak Analysis":
     st.write(f"In a room of 100 players, **{int(odds)}** would have already found a shard by now.")
     
     if odds > 90:
-        st.error("That is a massive dry streak. Stay strong.")
+        st.error("That is a massive dry streak. Stay strong. Complain to Dovah")
 
-elif mode == "Overall Luck (Z-Score)":
+elif mode == "Overall Luck":
     st.header("Overall Luck Calculator")
     
     col1, col2 = st.columns(2)
