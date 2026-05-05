@@ -24,7 +24,7 @@ if mode == "Dry Streak Analysis":
         st.error("Welcome to the 1k club 🎉🎉🎉")
     elif packs >=1200 and packs < 2000:
         names=["KingofBasilisk","Mickermouse","Nokister", "maomarc","spegedy","Lua","Pehmo", "Whovianpancake", "EsculantApe", "Dora", "Mike_cee", "Flizor", "ShyPuppet", "lamouuun", "golan", "Frannouche", "Perry3951", "Buzielo", "YellowCake", "Dovah", "RedMan", "Furycad", "Nekoss", "Chreet", "Bushmaster", "Exil", "Gallicien", "Devious", "Tomstoast", "Alf", "HotGayDad", "LeMonke", "Firion", "Ahmphi", "Jörm", "Mickermouse", "Griffin354", "RetroKr1ss", "Sachenfire", "asdfjklsemicolon", "EchoStyx", "sprixis", "Papa Grimace"]
-        st.error(f"Have you tried opening one of {random.randrange(0,len(names)-1)}'s sponsored packs")
+        st.error(f"Have you tried opening one of {names[random.randrange(0,len(names)-1)]}'s sponsored packs")
     elif odds < 50:
         st.error("Still under the mean, keep pulling")
     elif odds > 50 and packs < 1000:
