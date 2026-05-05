@@ -24,14 +24,14 @@ if mode == "Dry Streak Analysis":
         st.error("Welcome to the 1k club 🎉🎉🎉")
     elif packs >=1200 and packs < 2000:
         names=["KingofBasilisk","Mickermouse","Nokister", "maomarc","spegedy","Lua","Pehmo", "Whovianpancake", "EsculantApe", "Dora", "Mike_cee", "Flizor", "ShyPuppet", "lamouuun", "golan", "Frannouche", "Perry3951", "Buzielo", "YellowCake", "Dovah", "RedMan", "Furycad", "Nekoss", "Chreet", "Bushmaster", "Exil", "Gallicien", "Devious", "Tomstoast", "Alf", "HotGayDad", "LeMonke", "Firion", "Ahmphi", "Jörm", "Mickermouse", "Griffin354", "RetroKr1ss", "Sachenfire", "asdfjklsemicolon", "EchoStyx", "sprixis", "Papa Grimace"]
-        st.error(f"Have you tried opening one of {names[random.randrange(0,len(names)-1)]}'s sponsored packs")
+        st.error(f"Having some bad luck, have you tried opening one of {names[random.randrange(0,len(names)-1)]}'s sponsored packs?")
     elif odds < 50:
         st.error("Still under the mean, keep pulling")
     elif odds > 50 and packs < 1000:
         st.error("Starting to get unlucky, have you tried closing a few tabs?")
     elif packs >= 2000 and packs < 2200:
         st.error("Rare 2k club member")
-    elif packs >=220 and packs < 3000:
+    elif packs >=2200 and packs < 3000:
         st.error("Surely it is coming now")
     elif packs > 3000 and packs < 3400:
         st.error("Only legend himself @Furycad has gone so far, entering unexplored land")
