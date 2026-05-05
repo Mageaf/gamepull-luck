@@ -23,7 +23,7 @@ if mode == "Dry Streak Analysis":
     if packs >= 1000 and packs < 1200:
         st.error("Welcome to the 1k club 🎉🎉🎉")
     elif packs >=1200 and packs < 2000:
-        names=["KingofBasilisk","Mickermouse","Nokister", "maomarc","spegedy","Lua","Pehmo", "Whovianpancake", "EsculantApe", "Dora", "Mike_cee", "Flizor", "ShyPuppet", "lamouuun", "golan", "Frannouche", "Perry3951", "Buzielo", "YellowCake", "Dovah", "RedMan", "Furycad", "Nekoss", "Chreet", "Bushmaster", "Exil", "Gallicien", "Devious", "Tomstoast", "Alf", "HotGayDad", "LeMonke", "Firion", "Ahmphi", "Jörm", "Mickermouse", "Griffin354", "RetroKr1ss", "Sachenfire", "asdfjklsemicolon", "EchoStyx", "sprixis", "Papa Grimace"]
+        names=["Salmonella","KingofBasilisk","Mickermouse","Nokister", "maomarc","spegedy","Lua","Pehmo", "Whovianpancake", "EsculantApe", "Dora", "Mike_cee", "Flizor", "ShyPuppet", "lamouuun", "golan", "Frannouche", "Perry3951", "Buzielo", "YellowCake", "Dovah", "RedMan", "Furycad", "Nekoss", "Chreet", "Bushmaster", "Exil", "Gallicien", "Devious", "Tomstoast", "Alf", "HotGayDad", "LeMonke", "Firion", "Ahmphi", "Jörm", "Mickermouse", "Griffin354", "RetroKr1ss", "Sachenfire", "asdfjklsemicolon", "EchoStyx", "sprixis", "Papa Grimace"]
         st.error(f"Having some bad luck, have you tried opening one of {names[random.randrange(0,len(names)-1)]}'s sponsored packs?")
     elif odds < 50:
         st.error("Still under the mean, keep pulling")
@@ -33,7 +33,7 @@ if mode == "Dry Streak Analysis":
         st.error("Rare 2k club member")
     elif packs >=2200 and packs < 3000:
         st.error("Surely it is coming now")
-    elif packs > 3000 and packs < 3400:
+    elif packs >=3000 and packs < 3400:
         st.error("Only legend himself @Furycad has gone so far, entering unexplored land")
     elif packs > 3400:
         st.error("Record-breaking streak! (Not the kind of record you like to break)")
